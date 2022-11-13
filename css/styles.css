@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+canvas {
+    border: 1px solid #000;
+}
+
+div#controls {
+    position: absolute;
+    left: 820px;
+    top: 10px;
+    border: 1px solid #000;
+    width: 200px;
+    padding: 10px;
+}
+
+.dimension {
+    position: absolute;
+    left: 100px;
+    width: 50px;
+}
+
+div.input-dim {
+    background: #DDD;
+    padding: 2px;
+}
+
+div.input-dim:nth-child(even) {
+    background: #FFF;
+
+}
+
+.btn {
+    height: 30px;
+}

@@ -1,0 +1,64 @@
+<html>
+    <head>
+
+        <link rel="stylesheet" href="css/styles.css" />
+    
+        <title>Custom Glasses!</title>
+    </head>
+
+    <body>
+        
+        <canvas id="editor" width="800" height="600"></canvas>        
+
+        <div id="controls">
+            <!--
+            Dimensions:
+            <div class="input-dim">
+                Width <input id="width" value="50.5" onchange="updateGeo()" class="dimension" type="text" />
+            </div>
+            <div class="input-dim">
+                Height <input id="height" value="50.5" onchange="updateGeo()" class="dimension" type="text" />
+            </div>
+            <div class="input-dim">
+                Depth <input id="depth" value="" onchange="updateGeo()" class="dimension" type="text" />
+            </div>
+            <input class="btn" type="button" onclick="updateGeo()" value="Update Geometry" />
+
+            <br />
+            -->
+
+            Parts:<br />
+            <input class="btn" type="button" onclick="editBridge()" value="edit bridge" /><br />
+            <input class="btn" type="button" onclick="editEyes()" value="edit eyes" /><br />
+            <input class="btn" type="button" onclick="editFrame()" value="edit frame" /><br />
+            
+            <hr />
+            Part Color: 
+            <input class="btn" type="button" onclick="changeColor(-1)" value="<" />
+            <input class="btn" type="button" onclick="changeColor(1)" value=">" />
+            <br />
+            Lens Color: 
+            <input class="btn" type="button" onclick="changeLensColor(-1)" value="<" />
+            <input class="btn" type="button" onclick="changeLensColor(1)" value=">" />
+
+            <hr />
+            <input class="btn" type="button" onclick="exportSTL()" value="EXPORT STL" />
+
+            <hr />
+            Keyboard controls: <br />
+            W/S: move vert up/down <br />
+            A/D: move vert left/right <br />
+            Z/X: change thickness<br />
+            Q/E: prev/next vertex <br />
+        </div>
+
+
+        <script src="js/libs/three.min.js"></script>
+        <script src="js/libs/STLExporter.js"></script>
+        <script src="js/libs/OBJExporter.js"></script>
+        <script src="js/libs/OrbitControls.js"></script>
+        <script src="js/glasses.js"></script>
+        <script src="js/makeGeo.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
